@@ -57,18 +57,4 @@ def configure():
     return render_template('index.html',
                            categories=categories,
                            countries=countries,
-                           graphJSON=json.dumps(graphJSON_dict))
-
-
-# Define the route for the categories form
-@app.route('/categories', methods=['POST'])
-def handle_categories_form():
-    # Get the selected category and countries from the form data
-    selected_category = request.form.get('category')
-    selected_countries = request.form.getlist('country[]')
-
-    # Process the form data as needed
-    # ...
-
-    # Return a response or render a template
-    return f"Selected Category: {selected_category}, Selected Countries: {selected_countries}"
+                           graphJSON=json.dumps(graphJSON_dict), show_reset_button=True)

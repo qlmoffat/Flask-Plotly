@@ -1,5 +1,6 @@
 <!-- categories.html -->
 <form action="/configure" method="POST">
+    <!-- Category field -->
     <div class="field">
         <label class="label">Category</label>
         <div class="control">
@@ -14,6 +15,7 @@
         </div>
     </div>
 
+    <!-- Country field -->
     <div class="field">
         <label class="label">Country</label>
         <div class="control">
@@ -27,9 +29,19 @@
         </div>
     </div>
 
+    <!-- Submit button -->
     <div class="field">
         <div class="control">
             <button class="button is-primary" type="submit">Submit</button>
         </div>
     </div>
+
+    <!-- Reset button -->
+    {% if show_reset_button %}
+    <div class="field">
+        <div class="control">
+            <a href="/" class="button is-danger">Reset</a>
+        </div>
+    </div>
+    {% endif %}
 </form>
