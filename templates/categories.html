@@ -1,0 +1,37 @@
+<form>
+    <div class="field">
+        <label class="label">Category</label>
+        <div class="control">
+            <div class="select">
+                <select name="category">
+                    <option>Select a category</option>
+                    {% for category in categories %}
+                    <option value="{{ category.id }}">{{ category.name }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+        </div>
+    </div>
+    
+    <div class="field">
+        <label class="label">Country</label>
+        <div class="control">
+            <div class="select is-multiple">
+                <select name="country[]" multiple>
+                    {% for country in countries %}
+                    <option value="{{ country.id }}">{{ country.name }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+        </div>
+    </div>
+    
+    <div class="field">
+        <div class="control">
+            <button class="button is-primary" type="submit">Submit</button>
+        </div>
+    </div>
+</form>
+</div>
+
+    

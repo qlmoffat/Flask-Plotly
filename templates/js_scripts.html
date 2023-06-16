@@ -1,0 +1,18 @@
+
+
+<!-- Bulma Select JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bulma-select@3.0.3/dist/js/bulma-select.min.js"></script>
+
+<!-- Country -->
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var categoryDropdown = document.querySelector('[name="category"]');
+        var countryDropdown = document.querySelector('[name="country[]"]');
+        
+        var categoryDropdownInstance = new bulmaSelect(categoryDropdown);
+        var countryDropdownInstance = new bulmaSelect(countryDropdown, {
+            multiple: true,
+            placeholder: 'Select countries',
+        });
+    });
+    </script>

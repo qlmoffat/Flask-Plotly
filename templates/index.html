@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
+    <style>
+        .columns {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="columns">
+            <div class="column is-one-third categories">
+                {% include 'categories.html' %}
+            </div>
+            <div class="column is-two-thirds plot">
+                {% include 'plot.html' %}
+            </div>
+        </div>
+    </div>
+    {% include 'js_scripts.html' %}
+</body>
+</html>

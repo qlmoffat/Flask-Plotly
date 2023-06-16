@@ -1,0 +1,94 @@
+{
+        "offset": 0,
+        "limit": 0,
+        "total": 0,
+        "marketSizes": [
+            {
+                "researchYear": 2022,
+                "geographyId": 1,
+                "geographyName": "United States",
+                "categoryId": 1,
+                "categoryName": "Cheese",
+                "industry": "Food and Beverage",
+                "dataTypeId": 1,
+                "dataType": "Revenue",
+                "unitName": "Million USD",
+                "inflationType": "Adjusted",
+                "exchangeRateName": "USD",
+                "perCapitaName": "Per Capita",
+                "unitMultiplier": 1,
+                "data": [
+                    {
+                        "year": 2020,
+                        "value": 200.0
+                    },
+                    {
+                        "year": 2021,
+                        "value": 220.0
+                    },
+                    {
+                        "year": 2022,
+                        "value": 240.0
+                    }
+                ]
+            },
+            {
+                "researchYear": 2022,
+                "geographyId": 2,
+                "geographyName": "United Kingdom",
+                "categoryId": 1,
+                "categoryName": "Cheese",
+                "industry": "Food and Beverage",
+                "dataTypeId": 1,
+                "dataType": "Revenue",
+                "unitName": "Million GBP",
+                "inflationType": "Adjusted",
+                "exchangeRateName": "GBP",
+                "perCapitaName": "Per Capita",
+                "unitMultiplier": 1,
+                "data": [
+                    {
+                        "year": 2020,
+                        "value": 100.0
+                    },
+                    {
+                        "year": 2021,
+                        "value": 110.0
+                    },
+                    {
+                        "year": 2022,
+                        "value": 120.0
+                    }
+                ]
+            },
+            {
+                "researchYear": 2022,
+                "geographyId": 3,
+                "geographyName": "Germany",
+                "categoryId": 1,
+                "categoryName": "Cheese",
+                "industry": "Food and Beverage",
+                "dataTypeId": 1,
+                "dataType": "Revenue",
+                "unitName": "Million EUR",
+                "inflationType": "Adjusted",
+                "exchangeRateName": "EUR",
+                "perCapitaName": "Per Capita",
+                "unitMultiplier": 1,
+                "data": [
+                    {
+                        "year": 2020,
+                        "value": 150.0
+                    },
+                    {
+                        "year": 2021,
+                        "value": 165.0
+                    },
+                    {
+                        "year": 2022,
+                        "value": 180.0
+                    }
+                ]
+            }
+        ]
+    }
