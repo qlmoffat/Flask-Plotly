@@ -4,7 +4,7 @@ import pandas as pd
 import pandas as pd
 import json
 
-def get_market_size():
+def get_market_size(category=None, geographies=None):
     with open('mocks/market_size.json') as file:
         data = json.load(file)
         data = data['marketSizes']
@@ -12,7 +12,13 @@ def get_market_size():
         market_sizes = []
         
         for i in data:
+            if category and i['categoryName'] != category:
+                continue
+            
             for v in i['data']:
+                if geographies and i['geographyName'] not in geographies:
+                    continue
+                
                 market_size = {
                     'Category': i['categoryName'],
                     'Geography': i['geographyName'],
@@ -27,13 +33,12 @@ def get_market_size():
         
     return df
 
-
     
 def filter(category, country):
     data = pd.read_json(get_market_size())
     cat_filtered = data[data['categoryName'] > category]
     country_filtered = cat_filtered[cat_filtered['geographyName'] > country]
-    print(country_filtered)
+    return country_filtered
     
 def get_categories():
     with open('mocks/categories.json') as file:

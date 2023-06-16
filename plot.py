@@ -12,9 +12,11 @@ def generate_bar(data, x, y):
         x_values.append(i[x])
         y_values.append(i[y])
 
+    title = "{} plotted with {}".format(x, y)
+    
     fig = go.Figure(
         data=[go.Bar(x=x_values, y=y_values)],
-        layout_title_text="A Figure Displayed with fig.show()"
+        layout_title_text=title
     )
 
     return fig
