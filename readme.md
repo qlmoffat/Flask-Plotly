@@ -1,21 +1,29 @@
 # Get Started
 1. Clone Repo
 2. Install requirements.txt
-3. Run with run.py
-4. Navigate to http://127.0.0.1:5000/
+
+## Flask
+3. Run with python3 run.py
+4. Navigate to http://localhost:5000/
+
+## Streamlit
+3. Run with streamlit run stream.py
+4. Navigate to http://localhost:8501/
 
 # Project Layout
-
 ## Flask
 * app.py -> Core page level routes
 * run.py -> Initialise the application.
 * data.py
 
+## Streamlit
+* stream.py -> Streamlit App
+
 ## Euromonitor
-* euromonitor.py -> will control the relationship with the Euromonitor API
+* euromonitor.py -> controls the relationship with the Euromonitor API
 
 ## Plotting
-* render.py -> will render the various charts/tables from Plotly
+* render.py -> will render the various charts/tables from Plotly for the Flask Application
 
 TODO:
 1. Barchart
