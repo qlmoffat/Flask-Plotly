@@ -1,0 +1,8 @@
+Flask==2.3.2
+folium==0.14.0
+opencage==2.2.0
+pandas==2.0.2
+plotly==5.15.0
+python-dotenv==1.0.0
+Requests==2.31.0
+streamlit==1.24.0

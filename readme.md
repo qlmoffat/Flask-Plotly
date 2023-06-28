@@ -1,14 +1,15 @@
 # Get Started
 1. Clone Repo
-2. Install requirements.txt
+2. Create a virtual environment
+3. Install requirements.txt
 
 ## Flask
-3. Run with python3 run.py
-4. Navigate to http://localhost:5000/
+4. Run with python3 run.py
+5. Navigate to http://localhost:5000/
 
 ## Streamlit
-3. Run with streamlit run stream.py
-4. Navigate to http://localhost:8501/
+4. Run with streamlit run stream.py
+5. Navigate to http://localhost:8501/
 
 # Project Layout
 ## Flask
