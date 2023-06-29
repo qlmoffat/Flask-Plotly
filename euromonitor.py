@@ -48,6 +48,12 @@ class EuromonitorAPI:
         json_response = self.make_request(url)
         data_slices = json.loads(json_response)
         return data_slices
+    
+    def get_datatypes_by_industry_code(self, industry_code):
+        url = f"https://api.euromonitor.com/catalog/MarketSize/datatype?IndustryCodes={industry_code}"
+        json_response = self.make_request(url)
+        data_slices = json.loads(json_response)
+        return data_slices
 
 class EuromonitorDB:
     def __init__(self):
