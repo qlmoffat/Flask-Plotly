@@ -83,6 +83,7 @@ with col1:
     
     # Get dtypes for the selected industry code
     types = get_datatypes(selected_category_industry_code)
+    st.text(types)
 
     type_selector = st.selectbox("Data Types", options=types['name'], label_visibility="visible")
     

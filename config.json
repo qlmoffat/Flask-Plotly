@@ -1,0 +1,46 @@
+{
+    "geographies": [170, 327, 380, 352, 351, 11, 273],
+    "metrics": [
+      {
+        "Name": "Population 2022",
+        "ID": "SP.POP.TOTL",
+        "Type": "Number",
+        "Source": "Worldbank"
+      },
+      {
+        "Name": "Population Growth 2021 -> 2022",
+        "ID": "SP.POP.GROW",
+        "Type": "Number",
+        "Source": "Worldbank"
+      },
+      {
+        "Name": "Stout",
+        "ID": "12436",
+        "Type": "Number",
+        "Source": "Euromonitor",
+        "DataType": "CAGR"
+      },
+      {
+        "Name": "RTDs",
+        "ID": "12439",
+        "Type": "Number",
+        "Source": "Euromonitor",
+        "DataType": "Market Size"
+      },
+      {
+        "Name": "Meat Snacks",
+        "ID": "330",
+        "Type": "Number",
+        "Source": "Euromonitor",
+        "DataType": "Market Size"
+      },
+      {
+        "Name": "Sugar",
+        "ID": "20706",
+        "Type": "Number",
+        "Source": "Euromonitor",
+        "DataType": "CAGR"
+      }
+    ]
+  }
+  

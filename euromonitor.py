@@ -196,7 +196,7 @@ class EuromonitorDB:
     def close_connection(self):
         self.conn.close()
         
-    def get_categories(self, level=None, parentId=None, industryCode=None):
+    def get_categories(self, level=None, parentId=None, industryCode=None, id=None):
         query = "SELECT name, id, parentId, industryCode FROM em_categories WHERE 1=1"
         conditions = []
         parameters = []
@@ -212,6 +212,10 @@ class EuromonitorDB:
         if industryCode is not None:
             conditions.append("industryCode = ?")
             parameters.append(industryCode)
+            
+        if id is not None:
+            conditions.append("id = ?")
+            parameters.append(id)
 
         if conditions:
             query += " AND " + " AND ".join(conditions)
